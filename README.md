@@ -1,6 +1,6 @@
 <div>
     <p align="center">
-        <img src="/.github/assets/unicorn.png" align="center" width="240" />
+        <img src="/.github/assets/unicorn.png" align="center" width="360" />
     </p>
     <hr>
 </div>
