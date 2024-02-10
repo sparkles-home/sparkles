@@ -1,0 +1,8 @@
+dist/
+node_modules/
+build/
+*.md
+*.mdx
+.yarn
+.turbo
+.vscode

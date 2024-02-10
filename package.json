@@ -1,0 +1,30 @@
+{
+  "name": "unicorn",
+  "description": "🦄 Magical commits to add some zest to your life, by using emojis to signal commit & pull-request intent.",
+  "license": "MIT",
+  "keywords": [
+    "emoji",
+    "git",
+    "commit",
+    "pull-request",
+    "gitmoji",
+    "unicorn"
+  ],
+  "packageManager": "yarn@4.1.0",
+  "scripts": {
+    "format": "prettier --write .",
+    "lint": "standard --fix .",
+    "docs": "ts-node ./scripts/generate-docs.ts"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@joggr/tempo": "^0.6.0",
+    "prettier": "^3.2.5",
+    "standard": "^17.1.0",
+    "ts-node": "^10.9.2",
+    "vite": "^5.1.1",
+    "vite-plugin-dts": "^3.7.2"
+  }
+}
