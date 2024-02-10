@@ -1,8 +1,11 @@
-# ⚠️ Work in Progress ⚠️
+<div>
+    <p align="center">
+        <img src="/.github/assets/unicorn.png" align="center" width="240" />
+    </p>
+    <hr>
+</div>
 
-# magical-commits
-
-:mage: Magical commits to add some zest to your life as a developer, by using emojis to signal commit & pull-request intent.
+> 🦄 Magical commits to add some zest to your life as a developer, by using emojis to signal commit & pull-request intent.
 
 ## ✅ The Standard
 
