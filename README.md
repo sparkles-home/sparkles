@@ -5,7 +5,7 @@
     <hr>
 </div>
 
-> 🦄 Magical commits to add some zest to your life as a developer, by using emojis to signal commit & pull-request intent.
+> 🦄 Magical commits to add some zest to your life, by using emojis to signal commit & pull-request intent.
 
 ## ✅ The Standard
 
