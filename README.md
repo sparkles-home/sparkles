@@ -1,11 +1,11 @@
 <div>
     <p align="center">
-        <img src="/.github/assets/unicorn.png" align="center" width="240" />
+        <img src="/.github/assets/unicorn.png" align="center" width="360" />
     </p>
     <hr>
 </div>
 
-> 🦄 Magical commits to add some zest to your life as a developer, by using emojis to signal commit & pull-request intent.
+> 🦄 Magical commits to add some zest to your life, by using emojis to signal commit & pull-request intent.
 
 ## ✅ The Standard
 
