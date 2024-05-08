@@ -28,15 +28,15 @@ A commit message consists of three parts:
 
 #### Emoji & Format
 
-| type         | emoji | format                        |
-| ------------ | ----- | ----------------------------- |
-| feature      | 🦄    | `🦄 Feature - <message>`      |
-| bugfix       | 🐛    | `🐛 Bugfix - <message>`       |
-| hotfix       | 🔥    | `🔥 Hotfix - <message>`       |
-| chore        | ⚙️    | `⚙️ Chore - <message>`        |
-| docs         | 📚    | `📚 Docs - <message>`         |
-| dependencies | 📦    | `📦 Dependencies - <message>` |
-| bot          | 🤖    | `🤖 Bot - <message>`          |
+| type         | emoji | format                  |
+|------------  |-------|-------------------------|
+| feature      | 🦄    | `🦄 feature: <message>` |
+| bugfix       | 🐛    | `🐛 bugfix: <message>`  |
+| hotfix       | 🔥    | `🔥 hotfix: <message>`  |
+| chore        | ⚙️     | `⚙️ chore: <message>`   |
+| docs         | 📚    | `📚 docs: <message>`    |
+| dependencies | 📦    | `📦 dependencies: <message>`    |
+| bot          | 🤖    | `🤖 bot: <message>`     |
 
 #### Message
 
