@@ -1,0 +1,85 @@
+name: '🦄 Publish to npm'
+
+run-name: 'Publish packages to npm Registry (${{ inputs.version }} change)'
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Semantic Version'
+        required: true
+        type: choice
+        options:
+          - patch
+          - minor
+          - major
+
+jobs:
+  publish:
+    name: 'Publish to GitHub npm Registry'
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        package: ["cli", "core"]
+    steps:
+      - name: '🛒 Checkout Code'
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_BOT_TOKEN }}
+
+      - name: '🟢 Setup Node.js'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'yarn'
+
+      - name: '🔼 Increment Version'
+        run: yarn workspace @sparkles/${{ matrix.package }} version ${{ inputs.version }}
+
+      - name: '#️⃣ Get Version'
+        uses: actions/github-script@v7
+        id: version
+        with:
+          result-encoding: string
+          retries: 3
+          script: |
+            const fs = require('fs');
+            const pj = JSON.parse(fs.readFileSync('${{ github.workspace }}/packages/${{ matrix.package }}/package.json'));
+            return pj.version;
+
+      - name: '💾 Commit Incremented Version'
+        run: |
+          git config --local user.email "${{ secrets.GH_BOT_EMAIL }}"
+          git config --local user.name "${{ secrets.GH_BOT_NAME }}"
+          git add ./packages/${{ matrix.package }}/package.json
+          git commit -m "[🤖 npm-publish]: ${{ matrix.package }}:${{ steps.version.outputs.result }} (${{ inputs.version }})"
+          git push origin HEAD --force
+
+      - name: '📦 Install packages'
+        run: yarn workspace @sparkles/${{ matrix.package }} install
+
+      - name: '🏗️ Build'
+        run: yarn turbo run build --filter=@sparkles/${{ matrix.package }}
+
+      - name: '🧶 Setup .yarnrc.yml'
+        run: 'yarn config set npmScopes.sparkles.npmAuthToken ${{ secrets.GH_BOT_TOKEN }}'
+
+      # WE may not need this
+      # - name: '📇 Set package name'
+      #   uses: actions/github-script@v7
+      #   with:
+      #     result-encoding: string
+      #     retries: 3
+      #     script: |
+      #       const fs = require('fs');
+      #       const pj = JSON.parse(fs.readFileSync('${{ github.workspace }}/packages/${{ matrix.package }}/package.json'));
+      #       fs.writeFileSync(
+      #         '${{ github.workspace }}/packages/${{ matrix.package }}/package.json', 
+      #         JSON.stringify({ 
+      #           ...pj, 
+      #           name: `@sparkles/${{ matrix.package }}` 
+      #         }, null, 2)
+      #       );
+
+      - name: '🚢 Publish'
+        run: yarn workspaces foreach -A --include @sparkles/${{ matrix.package }} npm publish --tolerate-republish

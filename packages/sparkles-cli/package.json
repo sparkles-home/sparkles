@@ -1,5 +1,5 @@
 {
   "name": "@sparkles/cli",
-  "description": "🌟 The command-line interface for sparkles, the commit and pull-request standards engine.",
+  "description": "🌟 The command-line interface for sparkles.",
   "packageManager": "yarn@4.1.0"
 }
