@@ -4,8 +4,7 @@
 <br />
 
 <div align="center">
-    <img src="https://raw.githubusercontent.com/enchanted-forest/main/images/sparkles-banner.png" align="center" width="100%" />
-    <hr>
+    <img src="https://raw.githubusercontent.com/sparkles-home/enchanted-forest/main/images/sparkles-banner.png" align="center" width="100%" />
     <hr>
     <p>
       🦄 Magical <code>git</code> and GitHub standards to add some zest to your life as a developer.
