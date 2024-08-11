@@ -1,3 +1,8 @@
+<img src="https://raw.githubusercontent.com/zrosenbauer/art/main/banners/banner_under_construction.png" alt="Under Construction" />
+<hr />
+<br />
+<br />
+
 <div>
     <p align="center">
         <img src="/.github/assets/unicorn.png" align="center" width="360" />
@@ -28,6 +33,7 @@ A commit message consists of three parts:
 
 #### Emoji & Format
 
+<<<<<<< HEAD
 | type         | emoji | format                        |
 | ------------ | ----- | ----------------------------- |
 | feature      | 🦄    | `🦄 Feature - <message>`      |
@@ -37,6 +43,17 @@ A commit message consists of three parts:
 | docs         | 📚    | `📚 Docs - <message>`         |
 | dependencies | 📦    | `📦 Dependencies - <message>` |
 | bot          | 🤖    | `🤖 Bot - <message>`          |
+=======
+| type         | emoji | format                  |
+|------------  |-------|-------------------------|
+| feature      | 🦄    | `🦄 feature: <message>` |
+| bugfix       | 🐛    | `🐛 bugfix: <message>`  |
+| hotfix       | 🔥    | `🔥 hotfix: <message>`  |
+| chore        | ⚙️     | `⚙️ chore: <message>`   |
+| docs         | 📚    | `📚 docs: <message>`    |
+| dependencies | 📦    | `📦 dependencies: <message>`    |
+| bot          | 🤖    | `🤖 bot: <message>`     |
+>>>>>>> 2f6fa2204ec4d33c8e3ba802cd12fabaf4165b0f
 
 #### Message
 

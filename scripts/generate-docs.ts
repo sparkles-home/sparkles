@@ -7,7 +7,7 @@ import {
   Standard,
   commits,
   pullRequests,
-} from '../packages/heart';
+} from '../packages/sparkles-core/dist';
 
 const DIRECTORY_PATH_DOCS = path.join(__dirname, '../docs');
 
