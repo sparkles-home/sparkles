@@ -1,2 +1,2 @@
-export * from './emojis'
-export * from './groups'
+export * from './emojis';
+export * from './groups';

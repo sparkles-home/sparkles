@@ -1,15 +1,24 @@
+<img src="https://raw.githubusercontent.com/zrosenbauer/art/main/banners/banner_under_construction.png" alt="Under Construction" />
+<hr />
+
 # Magical Standards for GitHub Pull Requests
 
-TBD
+🚧 WIP 🚧
 
 ## Titles
 
-TBD
+🚧 WIP 🚧
+
+<!-- Add a table via generator -->
 
 ## Descriptions
 
-TBD
+🚧 WIP 🚧
+
+<!-- Add a table via generator -->
 
 ## Labels
 
-TBD
+🚧 WIP 🚧
+
+<!-- Add a table via generator -->

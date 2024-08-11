@@ -1,8 +1,6 @@
-import { createStandardFactory } from '../lib/standard'
+import { createStandardFactory } from '../lib/standard';
 
-const createStandard = createStandardFactory(
-  '{{emoji}} {{group}}: {{text}}'
-)
+const createStandard = createStandardFactory('{{emoji}} {{group}}: {{text}}');
 
 export default {
   feature: createStandard('feature', '🦄'),
@@ -11,4 +9,4 @@ export default {
   dependencies: createStandard('dependencies', '📦'),
   chore: createStandard('chore', '🧰'),
   docs: createStandard('docs', '📚'),
-}
+};

@@ -1,5 +1,5 @@
 name: "sparkles"
-description: "Prints sparkles"
+description: "A GitHub Action that sparkles"
 runs:
   using: "node20"
   main: "action.js"

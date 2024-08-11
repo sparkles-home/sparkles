@@ -17,16 +17,23 @@
     "skipLibCheck": true,
     "strict": true,
     "baseUrl": ".",
-    "target": "ES2015",
+    "target": "ES2022",
     "moduleResolution": "Node",
     "outDir": "dist",
     "isolatedModules": false,
-    "jsx": "react",
     "removeComments": false,
-    "lib": ["DOM", "DOM.Iterable", "ESNext"]
+    "lib": [
+      "ESNext"
+    ],
+    "typeRoots": [
+      "node_modules/@types",
+      "src/*.d.ts"
+    ],
   },
-  "types": ["vite/client"],
-  "typeRoots": ["node_modules/@types", "src/*.d.ts"],
-  "include": ["vite.config.mts", "vitest.config.ts", "src/**/*"],
-  "exclude": ["node_modules/**/*"]
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules/**/*"
+  ]
 }

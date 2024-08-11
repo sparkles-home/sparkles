@@ -6,16 +6,17 @@
   "scripts": {
     "analyze": "biome check",
     "analyze:ci": "biome ci --diagnostic-level=error",
-    "type-check": "turbo types",
+    "type-check": "turbo type-check",
     "fix": "biome check --fix",
-    "test": "vitest",
-    "test:ci": "vitest"
+    "test": "turbo test",
+    "test:ci": "turbo test:ci"
   },
   "workspaces": [
     "packages/*",
     "tools/*"
   ],
   "devDependencies": {
-    "@biomejs/biome": "^1.8.3"
+    "@biomejs/biome": "^1.8.3",
+    "turbo": "^2.0.12"
   }
 }

@@ -1,9 +1,31 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "pipeline": {
+  "ui": "tui",
+  "tasks": {
     "build": {
-      "outputs": ["dist/**"]
+      "outputs": ["dist/**"],
+      "dependsOn": ["^build"]
     },
-    "type-check": {}
+    "test": {
+      "dependsOn": [],
+      "outputs": [],
+      "interactive": true
+    },
+    "test:ci": {
+      "dependsOn": [],
+      "outputs": []
+    },
+    "type-check": {
+      "dependsOn": [],
+      "outputs": []
+    },
+    "//#analyze": {
+      "dependsOn": [],
+      "outputs": []
+    },
+    "//#fix": {
+      "dependsOn": [],
+      "outputs": []
+    }
   }
 }

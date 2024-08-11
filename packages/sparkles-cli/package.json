@@ -1,5 +1,26 @@
 {
   "name": "@sparkles/cli",
-  "description": "🌟 The command-line interface for sparkles.",
-  "packageManager": "yarn@4.1.0"
+  "description": "The command-line interface for sparkles.",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/umd/index.js",
+      "types": "./dist/types/index.d.ts"
+    }
+  },
+  "main": "./dist/umd/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+  "scripts": {
+    "build": "yarn build:esm && yarn build:umd && yarn build:types",
+    "build:esm": "swc ./src -d ./dist/esm --strip-leading-paths --delete-dir-on-start -C module.type=es6",
+    "build:umd": "swc ./src -d ./dist/umd --strip-leading-paths --delete-dir-on-start -C module.type=umd",
+    "build:types": "tsc --emitDeclarationOnly --outDir ./dist/types"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.4.0",
+    "@swc/core": "^1.7.10",
+    "vitest": "^2.0.5"
+  }
 }

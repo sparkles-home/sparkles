@@ -8,4 +8,4 @@ export const availableGroups = [
   'dependencies',
   'chore',
   'docs',
-] as const
+] as const;
