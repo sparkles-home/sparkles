@@ -24,11 +24,7 @@
     "prettier": "^3.2.5",
     "standard": "^17.1.0",
     "ts-node": "^10.9.2",
-<<<<<<< HEAD
-    "vite": "^5.1.1",
-=======
     "vite": "^5.1.7",
->>>>>>> 2f6fa2204ec4d33c8e3ba802cd12fabaf4165b0f
     "vite-plugin-dts": "^3.7.2"
   }
 }
