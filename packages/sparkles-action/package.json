@@ -1,0 +1,13 @@
+{
+  "name": "@sparkles/action",
+  "description": "GitHub Action for Sparkles.",
+  "scripts": {
+    "build": "echo \"No build script specified\""
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.4.0",
+    "@swc/core": "^1.7.10",
+    "vcc": "^1.3.2",
+    "vitest": "^2.0.5"
+  }
+}
