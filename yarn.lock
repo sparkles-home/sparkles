@@ -775,7 +775,7 @@ __metadata:
     standard: "npm:^17.1.0"
     typescript: "npm:^5.3.3"
     vite: "npm:^5.1.7"
-    vite-plugin-dts: "npm:^4.0.2"
+    vite-plugin-dts: "npm:^4.0.3"
     vitest: "npm:^2.0.5"
   languageName: unknown
   linkType: soft
@@ -5741,9 +5741,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-plugin-dts@npm:^4.0.2":
-  version: 4.0.2
-  resolution: "vite-plugin-dts@npm:4.0.2"
+"vite-plugin-dts@npm:^4.0.3":
+  version: 4.0.3
+  resolution: "vite-plugin-dts@npm:4.0.3"
   dependencies:
     "@microsoft/api-extractor": "npm:7.47.4"
     "@rollup/pluginutils": "npm:^5.1.0"
@@ -5761,7 +5761,7 @@ __metadata:
   peerDependenciesMeta:
     vite:
       optional: true
-  checksum: 10c0/83686e14447f6c60740583e43a7b54ff226fa4115efc2f0445a68035d6e5d03a17e523fdd5ae0599503be8b43e784ce1f080edd893610554569a692d846f55e5
+  checksum: 10c0/b9bc7e3bf6e5c55beded0a4d54c408fb20f94670717194f80cce48610e4eecf849ea5261fe82d540d0c5a6967b175bd2848c016c2f11923fc686db04c12bb4f2
   languageName: node
   linkType: hard
 
